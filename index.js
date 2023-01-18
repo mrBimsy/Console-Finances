@@ -87,3 +87,9 @@ var finances = [
   ["Feb-2017", 671099],
 ];
 
+// Find amount of months
+const financesMonths = finances.length;
+let total = 0;
+let average = [];
+let averageChange = 0;
+let sum = 0;
