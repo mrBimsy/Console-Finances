@@ -87,9 +87,17 @@ var finances = [
   ["Feb-2017", 671099],
 ];
 
-// Find amount of months
+//  Find amount of months
+//  total months = finances.lenght
 const financesMonths = finances.length;
 let total = 0;
 let average = [];
 let averageChange = 0;
 let sum = 0;
+
+//  Amount of Profit/Loses over all months
+for (let i = 0; i < finances.length; i++) {
+  total += finances[i][1];
+}
+
+
