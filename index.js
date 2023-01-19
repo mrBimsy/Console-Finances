@@ -115,8 +115,6 @@ for (let i = 0; i < average.length; i++) {
 }
 averageChange = sum / average.length;
 
-/* I was fighting long time to write code to show date next to greatest 
-increase/decrease but I was not successful and decided to give up */
 
 // Display results 
 console.log("Financial Analysis ");
