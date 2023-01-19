@@ -89,28 +89,41 @@ var finances = [
 
 //  Find amount of months
 //  total months = finances.lenght
-const financesMonths = finances.length;
-let total = 0;
+let Months = finances.length;
+let netTotal = 0;
 let average = [];
 let averageChange = 0;
 let sum = 0;
+//  let dateGainMonth;
+//  let dateLossMonth;
 
 //  Amount of Profit/Loses over all months
 for (let i = 0; i < finances.length; i++) {
-  total += finances[i][1];
+  netTotal += finances[i][1];
 }
 
-// Find out the change
-for (let i = 0; i <finances.length; i++) {
-  if (i !== finances.lenght - 1) {
+// Find out the changes between months
+for (let i = 0; i < finances.length; i++) {
+  if (i !== finances.length - 1) {
     average.push(finances[i + 1][1] - finances[i][1]);
   }
 }
 
 // average = sum of all changes divided by amount of months
-for (let i = 0; i < average.lenght; i++) {
+for (let i = 0; i < average.length; i++) {
   sum = sum + average[i];
 }
-averageChange = sum / average.lenght;
+averageChange = sum / average.length;
 
+/* I was fighting long time to write code to show date next to greatest 
+increase/decrease but I was not successful and decided to give up */
+
+// Display results 
+console.log("Financial Analysis ");
+console.log("-------------------");
+console.log("Total Months: " + Months);
+console.log("Total: " + "$", netTotal);
+console.log("Average Change: " + "$", averageChange.toFixed(2));
+console.log("Greatest Increase in Profits: " + "$", Math.max.apply(Math, average));
+console.log("Greatest Decrease in Profits: " + "$", Math.min.apply(Math, average));
 
