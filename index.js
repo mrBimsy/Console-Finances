@@ -100,4 +100,17 @@ for (let i = 0; i < finances.length; i++) {
   total += finances[i][1];
 }
 
+// Find out the change
+for (let i = 0; i <finances.length; i++) {
+  if (i !== finances.lenght - 1) {
+    average.push(finances[i + 1][1] - finances[i][1]);
+  }
+}
+
+// average = sum of all changes divided by amount of months
+for (let i = 0; i < average.lenght; i++) {
+  sum = sum + average[i];
+}
+averageChange = sum / average.lenght;
+
 
