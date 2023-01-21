@@ -17,7 +17,8 @@ Your task is to write JavaScript code that analyzes the records to calculate eac
 
     * The average of the changes in Profit/Losses over the entire period.
 
-        ** You will need to track what the total change in profits is from month to month and then find the average.
+        ** You will need to track what the total change in profits 
+           is from month to month and then find the average.
 
         ** (Total/Number of months)
 
@@ -28,6 +29,3 @@ Your task is to write JavaScript code that analyzes the records to calculate eac
 ## Screenshot
 ![Screenshot of the webpage](Console.png)
 
-## License
-
-MIT
