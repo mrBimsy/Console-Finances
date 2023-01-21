@@ -29,3 +29,13 @@ Your task is to write JavaScript code that analyzes the records to calculate eac
 ## Screenshot
 ![Screenshot of the webpage](Console.png)
 
+## Sources
+https://www.javascripttutorial.net/javascript-array/
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
+
+https://www.javascripttutorial.net/javascript-for-loop/
+
+https://www.javascripttutorial.net/javascript-if-else-if/
+
+
